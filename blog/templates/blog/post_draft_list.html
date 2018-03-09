@@ -1,4 +1,4 @@
-{% extend 'blog/base.html' %}
+{% extends 'blog/base.html' %}
 
 {% block content %}
   {% for post in posts %}
@@ -8,4 +8,4 @@
         <p>{{ post.text|truncatechars:200 }}<p>
     </div>
   {% endfor %}
-{{% endblock %}}
+{% endblock %}
